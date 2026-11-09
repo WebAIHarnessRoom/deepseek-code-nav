@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "DeepSeek 代码块导航",
+  "version": "1.0.0",
+  "description": "在 DeepSeek 对话中一键跳转上一段 / 下一段代码块，边界自动置灰并高亮目标。",
+  "icons": {
+    "16": "icon-16.png",
+    "32": "icon-32.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://chat.deepseek.com/*"],
+      "run_at": "document_idle",
+      "js": ["content.js"]
+    }
+  ]
+}
