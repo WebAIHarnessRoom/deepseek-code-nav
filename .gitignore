@@ -7,3 +7,6 @@ __pycache__/
 node_modules/
 .vscode/
 .idea/
+
+.project_context/
+PROJECT_CONTEXT.md
