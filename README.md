@@ -42,9 +42,8 @@ python scripts/generate-icons.py   # 生成图标
 # linux打包脚本
 ./scripts/pack.sh                  # 打包到 dist/
 
-# windows打包命令，powershell中执行
-New-Item -ItemType Directory -Force -Path dist | Out-Null
-Compress-Archive -Path src\manifest.json, src\content.js, src\icon-16.png, src\icon-32.png, src\icon-48.png, src\icon-128.png -DestinationPath dist\deepseek-code-nav.zip -Force
+# windows打包脚本，powershell中执行
+./scripts/pack.ps1                  # 打包到 dist/
 ```
 
 改动 `src/content.js` 后，在扩展管理页点击「重新加载」，刷新对话页面即可生效。

@@ -1,0 +1,4 @@
+{
+  "extensionName": { "message": "DeepSeek 代码块导航" },
+  "extensionDescription": { "message": "在 DeepSeek 对话中一键跳转上一段 / 下一段代码块，边界自动置灰并高亮目标。" }
+}
